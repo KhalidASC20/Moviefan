@@ -34,6 +34,7 @@ body {
     height: 550px;
     width: 1000px;
     margin: auto;
+    padding-left: 60px;
 
 }
 #background_pic img {
