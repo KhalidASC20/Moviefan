@@ -33,6 +33,8 @@ body {
    
     height: 550px;
     width: 1000px;
+    margin: auto;
+    padding-left: 80px;
 
 }
 #background_pic img {
