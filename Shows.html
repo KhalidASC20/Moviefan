@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviefans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleshows.css">
+    <script src="shows.js" defer></script>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        .fa:hover {
+            opacity: 0.8;
+        }
+        .fa-facebook {
+          background: transparent;
+          color: white;
+        }
+        .fa-twitter {
+          background: transparent;
+          color: white;
+        }   
+        .fa-linkedin {
+          background:transparent;
+          color: white;
+        }
+        .fa-youtube {
+          background: transparent;
+          color: white;
+        }
+        .fa-instagram {
+          background: transparent;
+          color: white;
+          
+        }
+    </style>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #FFD700;
+        }
+
+        li {
+         float: left;
+         border-right:1px solid black;
+        }
+
+        li:last-child {
+        border-right: none;
+        }
+
+        li a {
+        display: block;
+        color: whitesmoke;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: rgb(211, 30, 30);
+        }
+
+        .active {
+        background-color: #4386bd;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a id="movies"href="index.html">Movies</a></li>
+            <li><a id="tvshows"href="Shows.html">TV Shows</a></li>
+            <li id="about"style="float:right"><a href="#about">About</a></li>
+         </ul>
+    </div>
+
+    <div class="Mega_div">
+        
+        
+        
+        <div id="Title">
+            <h1>Show Time</h1>
+        </div>  
+        <div class="first_container">
+            
+            
+            <div class="Disney">
+                <div class="Disney_pic">
+                    <img src="logos/Disney_logo.png">
+                </div>
+                <div class="Disney_text"></div>
+            </div>
+            <div class="Marvel">
+                <div class="Marvel_pic">
+                    <img src="logos/Marvel_logo.png">
+                </div>
+                
+                <div id="Marvel_text"></div>
+            </div>
+            <div class="Star_wars">
+                <div class="Star_wars_pic">
+                    <img src="logos/Star_wars_logo.png">
+                </div>
+                
+                <div id="Star_wars_text"></div>
+                
+            </div>
+          
+        </div>
+    
+        <div class="second_container">
+            <div class="Universal">
+                <div class="Universal_pic">
+                    <img src="logos/Universal_logo.png">
+                </div>
+                
+                <div id="Universal_text"></div>
+            </div>
+            <div class="Fox">
+                <div class="Fox_pic">
+                    <img src="logos/Fox_logo.png">
+                </div>
+                
+                <div id="Fox_text"></div>
+            </div>
+            <div class="Netflix">
+                <div class="Netflix_pic">
+                    <img src="logos/Netflix_logo.png">
+                </div>
+                
+                <div id="Netflix_text"></div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    <br><br>
+    <div class="movietime_container">
+        <div id="selection">
+            <h1>Show Selector</h1>
+        </div>
+        <div id="selection_explanation">
+            <p>Enjoy our selection of various Tv-shows by clicking on the logo that you want</p>
+        </div>
+    </div>
+
+    <div class="onward_incredibles">
+        <div id="container1">
+            <div id="name_div1">
+                <p class="color_change" id="onward_text">Jessie</p>
+            </div>
+            <div id="pic_div1">
+                <a href="https://www.youtube.com">
+                   <img id="onward_pic"src="images/jessie.png"> 
+                </a>
+            </div>
+            <div id="info_div1">
+                <p class="color_change" id="onward_is_text">jessie is...</p>
+            </div>
+        </div>
+        
+    
+        <div id="container2">
+            <div id="name_div2">
+                <p class="color_change" id="incredibles_text">gravity falls</p>
+            </div>
+            <div id="pic_div2">
+                <a href="https://www.youtube.com">
+                   <img id="incredibles_2_pic"src="images/gravity_falls.png"> 
+                </a>
+            </div>
+            <div id="info_div2">
+                <p class="color_change" id="incredibles_is_text">gravity falls is...</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+   
+    <div class="moana_frozen">
+        <div id="container3">
+            <div id="name_div3">
+                <p class="color_change" id="moana_text">Phineas and Ferb</p>
+            </div>
+            <div id="pic_div3">
+                <a href="https://www.pornhub.com">
+                     <img id="moana_pic"src="images/Phineas.png">
+                </a>
+                
+            </div>
+            <div id="info_div3">
+                <p class="color_change" id="moana_is_text">Phineas and Ferb is...</p>
+            </div>
+        </div>
+    
+        <div id="container4">
+            <div id="name_div4">
+                <p class="color_change" id="frozen_text">Kim Possible</p>
+            </div>
+            <div id="pic_div4">
+            <a href="https://www.youtube.com">
+                <img id="frozen_2_pic"src="images/kim_possible.png">
+            </a>
+            </div>
+            <div id="info_div4">
+                <p class="color_change" id="frozen_is_text">Kim Possible is...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="social_icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>    
+
+</body>
+</html>

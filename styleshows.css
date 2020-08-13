@@ -1,0 +1,228 @@
+html { 
+    background: url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+@font-face {
+    font-family: disney;
+    src: url(Fonts/Walter.ttf);
+ }
+ @font-face {
+    font-family: marvel;
+    src: url(Fonts/Marvel-BoldItalic.ttf);
+ }
+ @font-face {
+    font-family: starwars;
+    src: url(Fonts/Starjedi.ttf);
+ }
+ @font-face {
+    font-family: netflix;
+    src: url(Fonts/bebas-neue.ttf);
+ }
+
+body {
+    font-family: Helvetica;
+    margin: -8px;
+    
+}
+.Mega_div {
+    
+   
+    height: 550px;
+    width: 1000px;
+
+}
+#background_pic img {
+    height: 100px;
+    width: 234px;
+
+}
+#Title {
+    text-align: center;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 703px;
+    margin: auto;
+    color: white;
+    font-family: 'Segoe Script';
+    font-size: X-large;
+    text-decoration: underline;
+    
+}
+
+.Disney_pic img {
+    height: 100px;
+    width: 234px;
+    
+}
+.Marvel_pic img {
+    height: 100px;
+    width: 234px;
+}
+.Star_wars_pic img {
+    height: 100px;
+    width: 234px;
+}
+.Universal_pic img {
+    height: 100px;
+    width: 234px;
+}
+.Fox_pic img {
+    height: 100px;
+    width: 234px;
+}
+.Netflix_pic img {
+    height: 100px;
+    width: 234px;
+}
+
+  .first_container {
+    display: flex;
+    justify-content: center;
+  }
+  .second_container {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    margin-bottom: 20px;
+  }
+  #pic_div1 img {
+      height:200px;
+      width:150px;
+  }
+  #pic_div2 img {
+    height:200px;
+    width:150px;
+}
+#pic_div3 img {
+    height:200px;
+    width:150px;
+}
+#pic_div4 img {
+    height:200px;
+    width:150px;
+}
+.onward_incredibles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    background-color: #6876ed;
+    opacity: 90%;
+    
+    
+}
+.moana_frozen {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0px;  
+    background-color: #6876ed;
+    opacity: 90%;
+    
+    
+}
+.color_change {
+    color: white;
+}
+#name_div1 {
+    background-color: black;
+    opacity:70%;
+    
+    height:30px;
+}
+#info_div1 {
+    background-color: black;
+    opacity:70%;
+    
+    height:90px;
+    margin-top: -20px;
+}
+#name_div2 {
+    background-color: black;
+    opacity:70%;
+    
+    height:30px;
+}
+#info_div2 {
+    background-color: black;
+    opacity:70%;
+    
+    height:90px;
+    margin-top: -20px;
+}
+#name_div3 {
+    background-color: black;
+    opacity:70%;
+    
+    height:30px;
+}
+#info_div3 {
+    background-color: black;
+    opacity:70%;
+    
+    height:90px;
+    margin-top: -20px;
+}
+#name_div4 {
+    background-color: black;
+    opacity:70%;
+    
+    
+    height:30px;
+}
+#info_div4 {
+    background-color: black;
+    opacity:70%;
+    
+    height:90px;
+    margin-top: -20px;
+}
+
+/* hr {
+    margin: 0;
+} */
+
+p {
+    font-family: Arial;
+}
+
+#social_icons {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+#navbar {
+    margin-bottom: 20px;
+}
+.movietime_container {
+    background-color: black;
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    opacity: 90%;
+    border: yellow solid;
+}
+#selection {
+    color: white;
+    text-align: center;
+    background-color: yellow;
+    opacity: 80%;
+    font-family: 'Segoe UI';
+    width: 500px;
+    margin: auto;
+}
+#selection_explanation {
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    opacity: 80%;
+}

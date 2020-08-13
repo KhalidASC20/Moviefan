@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviefans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylehome.css">    
+    <script src="script.js" defer></script>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+        .fa:hover {
+            opacity: 0.8;
+        }
+        .fa-facebook {
+          background: transparent;
+          color: white;
+        }
+        .fa-twitter {
+          background: transparent;
+          color: white;
+        }   
+        .fa-linkedin {
+          background:transparent;
+          color: white;
+        }
+        .fa-youtube {
+          background: transparent;
+          color: white;
+        }
+        .fa-instagram {
+          background: transparent;
+          color: white;
+          
+        }
+    </style>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #6a74ab;
+        }
+
+        li {
+         float: left;
+         border-right:1px solid black;
+        }
+
+        li:last-child {
+        border-right: none;
+        }
+
+        li a {
+        display: block;
+        color: whitesmoke;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: rgb(211, 30, 30);
+        }
+
+        .active {
+        background-color: #4386bd;
+        }
+    </style>
+    <style>
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        img {
+          vertical-align: middle;
+        }
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a id="movies"href="index.html">Movies</a></li>
+            <li><a id="tvshows"href="Shows.html">TV Shows</a></li>
+            <li id="about"style="float:right"><a href="#about">About</a></li>
+         </ul>
+    </div>
+    <div id="Title">
+        <h1>Moviefans</h1>
+    </div>  
+    <div class="home_text">
+        <p id="welcome">Welcome to Moviefans</p>
+        <p id="ipsum1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        
+        
+    </div>
+    <div class="a_cite_title">
+        <p id ="a_cite">A cite for moviefans</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+ 
+    </div>
+    <div class="by_moviefans_title">
+        <p id="by_moviefans">by moviefans</p>
+        <p>There is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class="container">
+  <div class="mySlides">
+    <!-- <div class="numbertext">1 / 6</div> -->
+    <!-- <img src="images/Moana.png" style="width:10%"> -->
+  </div>
+
+  <div class="mySlides">
+    <!-- <div class="numbertext">2 / 6</div>
+    <img src="img_5terre_wide.jpg" style="width:100%"> -->
+  </div>
+
+  <div class="mySlides">
+    <!-- <div class="numbertext">3 / 6</div>
+    <img src="img_mountains_wide.jpg" style="width:100%"> -->
+  </div>
+    
+  <div class="mySlides">
+    <!-- <div class="numbertext">4 / 6</div>
+    <img src="img_lights_wide.jpg" style="width:100%"> -->
+  </div>
+
+  <div class="mySlides">
+    <!-- <div class="numbertext">5 / 6</div>
+    <img src="img_nature_wide.jpg" style="width:100%"> -->
+  </div>
+    
+  <div class="mySlides">
+    <!-- <div class="numbertext">6 / 6</div>
+    <img src="img_snow_wide.jpg" style="width:100%"> -->
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/big_mouth.png" style="width:100%" onclick="currentSlide(1)" alt="Big Mouth">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Dark.png" style="width:100%" onclick="currentSlide(2)" alt="Dark">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/gravity_falls.png" style="width:100%"  onclick="currentSlide(3)" alt="Gravity Falls">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/kim_possible.png" style="width:100%" onclick="currentSlide(4)" alt="Kim Possible">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Endgame.png" style="width:100%" onclick="currentSlide(5)" alt="Avengers Endgame">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/old_guard.png" style="width:100%" onclick="currentSlide(6)" alt="Old Guard">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+    <!-- <div class="Mega_div">
+        
+        <div id="Title">
+            <h1>Moviefans</h1>
+        </div>  
+        
+        <div id="Title">
+            <h1>Moviefans</h1>
+        </div>  
+        <div class="first_container">
+            
+            
+            <div class="Disney">
+                <div class="Disney_pic">
+                    <img src="logos/Disney_logo.png">
+                </div>
+                <div class="Disney_text"></div>
+            </div>
+            <div class="Marvel">
+                <div class="Marvel_pic">
+                    <img src="logos/Marvel_logo.png">
+                </div>
+                
+                <div id="Marvel_text"></div>
+            </div>
+            <div class="Star_wars">
+                <div class="Star_wars_pic">
+                    <img src="logos/Star_wars_logo.png">
+                </div>
+                
+                <div id="Star_wars_text"></div>
+                
+            </div>
+          
+        </div>
+    
+        <div class="second_container">
+            <div class="Universal">
+                <div class="Universal_pic">
+                    <img src="logos/Universal_logo.png">
+                </div>
+                
+                <div id="Universal_text"></div>
+            </div>
+            <div class="Fox">
+                <div class="Fox_pic">
+                    <img src="logos/Fox_logo.png">
+                </div>
+                
+                <div id="Fox_text"></div>
+            </div>
+            <div class="Netflix">
+                <div class="Netflix_pic">
+                    <img src="logos/Netflix_logo.png">
+                </div>
+                
+                <div id="Netflix_text"></div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+    <br><br>
+
+    <div class="onward_incredibles">
+        <div id="container1">
+            <div id="name_div1">
+                <p class="color_change" id="onward_text">Onward</p>
+            </div>
+            <div id="pic_div1">
+                <a href="https://www.youtube.com">
+                   <img id="onward_pic"src="images/Onward_pic.png"> 
+                </a>
+            </div>
+            <div id="info_div1">
+                <p class="color_change" id="onward_is_text">Onward is...</p>
+            </div>
+        </div>
+        
+    
+        <div id="container2">
+            <div id="name_div2">
+                <p class="color_change" id="incredibles_text">Incredibles 2</p>
+            </div>
+            <div id="pic_div2">
+                <a href="https://www.youtube.com">
+                   <img id="incredibles_2_pic"src="images/Incredibles_2.png"> 
+                </a>
+            </div>
+            <div id="info_div2">
+                <p class="color_change" id="incredibles_is_text">Incredibles 2 is...</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+   
+    <div class="moana_frozen">
+        <div id="container3">
+            <div id="name_div3">
+                <p class="color_change" id="moana_text">Moana</p>
+            </div>
+            <div id="pic_div3">
+                <a href="https://drive.google.com/file/d/1ARETrF12kI2Gq0-hFTTYSlwPQktw_Q_K/view">
+                     <img id="moana_pic"src="images/Moana.png">
+                </a>
+                
+            </div>
+            <div id="info_div3">
+                <p class="color_change" id="moana_is_text">Moana is...</p>
+            </div>
+        </div>
+    
+        <div id="container4">
+            <div id="name_div4">
+                <p class="color_change" id="frozen_text">Frozen 2</p>
+            </div>
+            <div id="pic_div4">
+            <a href="https://www.youtube.com">
+                <img id="frozen_2_pic"src="images/Frozen_2.png">
+            </a>
+            </div>
+            <div id="info_div4">
+                <p class="color_change" id="frozen_is_text">Frozen 2 is...</p>
+            </div>
+        </div>
+    </div> -->
+    
+    <div id="social_icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>    
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="UpUZIQ53EXHbY44I18lD-YcXYYoFaQka3g_EJhS_lf0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherlock</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1> Hello I am Sherlock</h1>
+    <h2>I am a Fact Checker</h2>
+
+    <form>
+        <input type="text" id="fact_input">
+        <button>Click to Fact Check</button>
+    </form>
+    
+    <p>Searching...</p>
+    <br><br>
+    <div id="results"></div>
+
+    
+</body>
+</html> -->
